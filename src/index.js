@@ -1,7 +1,31 @@
-import express from 'express'
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { connectDB } from "./config/DB.js";
 import drugRoutes from "./routes/drugRoutes.js";
+import { connectDB } from "./config/DB.js";
+//import { authenticate } from "./middleware/authenticate.js";
+//import admin from "firebase-admin";
+//import fs from "fs";
 
-const app = express()
+//const serviceAccount = JSON.parse(
+ // fs.readFileSync(process.env.SERVICE_ACCOUNT_FILE, "utf8")
+//);
+ 
+
+dotenv.config();
+
+//admin.initializeApp({
+ // credential: admin.credential.cert(serviceAccount)
+//});
+
+const app = express();
+
+
+app.use(cors());
+app.use(express.json());
+
+connectDB();
 
 
 app.get("/", (req, res) =>  {
