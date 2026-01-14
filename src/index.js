@@ -12,7 +12,7 @@ app.get('/api/users/:id', (_req, res) => {
   res.json({ id: _req.params.id })
 })
 
-//app.use("/drug", drugRoutes);
+app.use("/drug", drugRoutes);
 //app.use("/auth/drug", drugRoutes);
 //app.use("/free/drug", drugRoutes);
 
