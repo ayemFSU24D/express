@@ -1,5 +1,5 @@
 import express from 'express'
-//import drugRoutes from "./routes/drugRoutes.js";
+import drugRoutes from "./routes/drugRoutes.js";
 
 const app = express()
 
