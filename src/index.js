@@ -2,9 +2,10 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', (_req, res) => {
-  res.send('Hello Express!')
-})
+
+app.get("/", (req, res) => {
+  res.send("Backend running on Vercel ✅");
+});
 
 app.get('/api/users/:id', (_req, res) => {
   res.json({ id: _req.params.id })
