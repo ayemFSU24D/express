@@ -32,5 +32,6 @@ app.use("/drug", drugRoutes);
 
 // Protected
 app.use("/auth/drug", authenticate, drugRoutes);
+app.use("/free/drug", drugRoutes);
 
 export default app;
