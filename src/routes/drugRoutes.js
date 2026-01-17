@@ -7,6 +7,6 @@ import { getDrugList } from "../Controllers/drugController.js";
 const router = express.Router();
 
 router.get("/list", getDrugList);
-//router.get("/:name/organs-auth", getDrugOrgans);
+router.get("/:name/organs-auth", getDrugOrgans);
 router.get("/:name/organs-free", getDrugOrgans);
 export default router;
