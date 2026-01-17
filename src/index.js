@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import { connectDB } from "./config/DB.js";
 import drugRoutes from "./routes/drugRoutes.js";
 import { authenticate } from "./middleware/authenticate.js";
-import "./config/firebase.js"; // 🔥 ENDAST import
+//import "./config/firebase.js"; // 🔥 ENDAST import
 
 dotenv.config();
 
