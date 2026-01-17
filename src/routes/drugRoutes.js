@@ -1,6 +1,6 @@
 import express from "express";
-//import { getDrugOrgans } from "../Controllers/drugController.js";
-//import { authenticate } from "../middleware/authenticate.js";
+import { getDrugOrgans } from "../Controllers/drugController.js";
+import { authenticate } from "../middleware/authenticate.js";
 import { getDrugList } from "../Controllers/drugController.js";
 
 
