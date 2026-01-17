@@ -28,7 +28,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 // Public
-app.use("/drug", drugRoutes);
+app.use("/drug", drugRoutes); 
 
 // Protected
 //app.use("/auth/drug", authenticate, drugRoutes);
